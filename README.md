@@ -11,7 +11,7 @@ To use this, follow these steps:
 
 - clone the repository
 - install Ruby and Rails if you don't have it on your system
-- Run `bundler install`
+- Run `bundle install`
 - Run `rails db:migrate`
   - if you get an error saying `personal_blogs_development` does not exists
     * run `rails db:create`
