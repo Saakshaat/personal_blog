@@ -1,7 +1,9 @@
 # Journal
 This is a journal that I'm using to document thoughts and events as I come across them.
 
-For reasons of privacy, I've not included the link to my journal but the source code can help you build and host your own instance.
+Every instance can only be used by the creator through a login username and password which can be found at `/app/controllers/application_controller.rb`. 
+
+If you want your journal to be open to everyone, comment out `Line 2: http_basic_authenticate_with :name => "", :password => ""`
 
 ## Rails
 
