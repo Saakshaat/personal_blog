@@ -1,0 +1,25 @@
+<%provide(:title, "#{@blog.person}\'s Idea") %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Idea:</strong>
+  <%= @blog.idea %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @blog.person %>
+</p>
+
+<p>
+  <strong>When:</strong>
+  <%= @blog.when %>
+</p>
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>
+<br><br><br><br><br>
+<footer>
+<%= link_to 'Destroy', @blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+</footer>

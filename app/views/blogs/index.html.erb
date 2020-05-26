@@ -1,0 +1,32 @@
+<%provide(:title, "Thoughts")%>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Thoughts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Idea</th>
+      <th>Person</th>
+      <th>When</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td><%= blog.idea %></td>
+        <td><%= blog.person %></td>
+        <td><%= blog.when %></td>
+        <td><%= link_to 'Show', blog %></td>
+        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Blog', new_blog_path %>
